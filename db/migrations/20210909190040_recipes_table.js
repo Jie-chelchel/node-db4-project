@@ -10,7 +10,7 @@ exports.up = async function (knex) {
       table.integer("step_number", 128).unsigned().notNullable();
       table.string("step_instructions", 1024).notNullable();
       table
-        .integer("recipe)id")
+        .integer("recipe_id")
         .unsigned()
         .notNullable()
         .references("recipe_id")
